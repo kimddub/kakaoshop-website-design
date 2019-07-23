@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kakao Shop</title>
+
+    <!-- 화면배율을 디바이스 크기 기준 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- owl 캐러셀 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+</head>
+<body>    
+
+    <!--모바일-->
+    <div class="mobile-top-line mobile"></div>
+
+    <div class="mobile-top mobile-con row absolute mobile">
+        <div class="top-menu-1 cell">
+            <a class="img-box side-menu-btn ico show-left-side-bar-btn" href="#">
+                <img src="" alt="">
+            </a>
+            <a class="ico img-box mobile-search-box" href="#">
+                <img src="" alt="" class="search">
+            </a>
+        </div>
+        
+        <h1>
+            <div class="logo cell"></div>
+        </h1>
+        
+        <div class="top-menu-2 cell-right">
+            <a href="#" class="ico img-box mobile-ico-cart">
+                <img src="" alt="">
+            </a>
+            <a href="#" class="ico img-box mobile-ico-global">
+                <img src="" alt="">
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!--모바일 서치 모드-->
+    <div id="mobile-search-bar" class="mobile-top mobile-con absolute">
+        <div class="top-menu-1 row">
+            <a class="ico img-box mobile-search-box" href="#">
+                <img src="" alt="" class="search">
+            </a>
+            <form action=""><input type="text" placeholder="검색어를 입력하세요"></form>
+            <a class="hide-mobile-seach-btn-box cell-right" href="#"><span class="hide-mobile-seach-bar-btn">취소</span></a>
+        </div>
+    </div>
+        
+    <div class="mobile-search-bg"></div>
+
+    <!--모바일 사이드 메뉴-->
+
+    <div id="left-side-bar" class="mobile-side-bar mobile">
+        <div>
+            <div class="top row">
+                <div class="login">
+                    <a href="#">로그인이 필요해요</a><br>
+                    <span>카카오 간편로그인</span>
+                </div>
+                <a class="non-member" href="#">비회원 주문조회</a>
+                <div class="hide-left-side-bar-btn cell-right">
+                    <span class="btn ico"></span>
+                </div>
+                <div class="top-bn">
+                    <a href="#">
+                        <img src="http://t1.kakaocdn.net/friends/new_store/banner_gnb_nomember.png" alt="">
+                    </a>
+                </div>
+                <nav class="top-menu">
+                    <ul class="row">
+                        <li class="cell"><a href="#"><span class="ico side-ico-cart"></span>장바구니</a></li>
+                        <li class="cell"><a href="#"><span class="ico side-ico-order"></span>주문조회</a></li>
+                        <li class="cell"><a href="#"><span class="ico side-ico-wish"></span>찜</a></li>
+                        <li class="cell"><a href="#"><span class="ico side-ico-mypage"></span>마이페이지</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="middle">
+                <a class="middle-bn block" href="#">
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/20180920_ryan_NPbanner_M.jpg" alt="">
+                </a>
+                <nav class="middle-menu">
+                    <ul class="row">
+                        <li class="cell"><a href="#">전체보기</a></li>
+                        <li class="cell"><a href="#">테마 기획전</a></li>
+                        <li class="cell"><a href="#">인형/피규어</a></li>
+                        <li class="cell"><a href="#">리빙</a></li>
+                        <li class="cell"><a href="#">잡화</a></li>
+                        <li class="cell"><a href="#">의류</a></li>
+                        <li class="cell"><a href="#">쥬얼리</a></li>
+                        <li class="cell"><a href="#">문구</a></li>
+                        <li class="cell"><a href="#">여행/레져</a></li>
+                        <li class="cell"><a href="#">생활테크</a></li>
+                        <li class="cell"><a href="#"><span class="NINIZ"></span></a></li>
+                    </ul>
+                </nav>
+                <nav class="theme side-list">
+                    <a href="#">테마기획전
+                        <span class="NINIZ"></span>
+                    </a>
+                    <ul class="row">
+                        <li class="cell"><a href="#"><img src="https://t1.daumcdn.net/friends/prod/category/20181105_battle_GNB_M.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.daumcdn.net/friends/prod/category/20181105_racing_GNB_M.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.daumcdn.net/friends/prod/category/gnb_Mobile_theme_gentleman.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.daumcdn.net/friends/prod/category/20180831_M_theme_GNB_land.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.daumcdn.net/friends/prod/category/20180730_M_theme_GNB_hotel.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.daumcdn.net/friends/prod/category/littlerain.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.daumcdn.net/friends/prod/category/gnb_Mobile_theme_salon.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.daumcdn.net/friends/prod/category/gnb_Mobile_theme_dessert.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.daumcdn.net/friends/prod/category/gnb_Mobile_theme_flying.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.daumcdn.net/friends/prod/category/gnb_Mobile_theme_neohome.png" alt=""></a></li>
+                    </ul>
+                </nav>
+                <nav class="mobile-character side-list">
+                    <a href="#">캐릭터별 상품
+                        <span class="NINIZ"></span>
+                    </a>
+                    <ul class="row">
+                        <li class="cell"><a href="#"><img src="https://t1.kakaocdn.net/friends/kfo-common/mo/m640/side_character1_171129.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.kakaocdn.net/friends/kfo-common/mo/m640/side_character2_171129.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.kakaocdn.net/friends/kfo-common/mo/m640/side_character3_171129.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.kakaocdn.net/friends/kfo-common/mo/m640/side_character4_171129.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.kakaocdn.net/friends/kfo-common/mo/m640/side_character5_171129.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.kakaocdn.net/friends/kfo-common/mo/m640/side_character6_171129.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.kakaocdn.net/friends/kfo-common/mo/m640/side_character7_171129.png" alt=""></a></li>
+                        <li class="cell"><a href="#"><img src="https://t1.kakaocdn.net/friends/kfo-common/mo/m640/side_character8_171129.png" alt=""></a></li>
+                    </ul>    
+                </nav>
+            </div>
+            <div class="bottom">
+                <nav class="bottom-menu">
+                    <a href="#">
+                        <span class="ico cate-ico brand-ico"></span>
+                        브랜드 스토리
+                        <span class="NINIZ"></span>
+                    </a>
+                    <a href="#">
+                        <span class="ico cate-ico museum-ico"></span>뮤지엄
+                        <span class="NINIZ"></span>
+                    </a>
+                    <a href="#">
+                        <span class="ico cate-ico store-ico"></span>
+                        매장안내
+                        <span class="NINIZ"></span>
+                    </a>
+                    <a href="#">
+                        <span class="ico cate-ico customer-ico"></span>
+                        고객센터
+                        <span class="NINIZ"></span>
+                    </a>
+                </nav>
+                <div class="footer">
+                    <a class="login" href="#"><span class="NINIZ"></span>로그인 하러가기</a>
+                    <span class="corp">© KAKAO IX CORP.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--일반-->
+    <div class="bn-line"></div>
+    <div class="top-line"></div>
+
+    <!--탑-->
+    <div class="top-box con-min-width">
+        <div class="top-bn-box con-min-width">
+            <a class="relative con block text-align-center" href="#">
+                <div class="close-box absolute-middle absolute-right"></div>
+                <img src="http://t1.kakaocdn.net/friends/new_store/img_main_01_PC.png" alt="">
+                <img src="http://t1.kakaocdn.net/friends/new_store/txt_top_01.png" alt="">
+                
+            </a>
+        </div>
+        <div class="top-bar con row">
+            <div class="logo cell"></div>
+            
+            <nav class="top-menu cell">
+                <ul class="row ">
+                    <li class="cell">
+                        <a href="#">카테고리<span class="bottom-bar inline-block"></span></a>
+                        <div class="con-min-width height-600 relative">
+                            <div class="con">
+                                <nav class="sub-menu ">
+                                    <ul class="row">
+                                        <li class="cell">
+                                            <span>전체 분류</span>
+                                            <ul class="sub-menu-1 relative">
+                                                <li class="">
+                                                    <a href="#">전체</a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li><a href="#">신상품순</a></li>
+                                                        <li><a href="#">낮은 가격순</a></li>
+                                                        <li><a href="#">높은 가격순</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#">테마 기획전</a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li>
+                                                            <a href="#">배틀그라운드</a>
+                                                            <a href="" class="sub-banner"><img src="https://t1.daumcdn.net/friends/prod/category/20181105_battle_GNB_W@2x.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">프렌즈 레이싱</a>
+                                                            <a href="" class="sub-banner"><img src="https://t1.daumcdn.net/friends/prod/category/20181105_racing_GNB_W@2x.jpg" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">젠틀맨 라이언</a>
+                                                            <a href="" class="sub-banner"><img src="https://t1.daumcdn.net/friends/prod/category/gnb_theme_gentlemanRyan_v1.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">프렌즈 랜드</a>
+                                                            <a href="" class="sub-banner"><img src="https://t1.daumcdn.net/friends/prod/category/20180831_W_theme_GNB_land_2x.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">호텔 드 라이언</a>
+                                                            <a href="" class="sub-banner"><img src="https://t1.daumcdn.net/friends/prod/category/20180730_W_theme_GNB_hotel_2x.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">리틀 레인보우</a>
+                                                            <a href="" class="sub-banner"><img src="https://t1.daumcdn.net/friends/prod/category/20180626_W_theme_GNB_rainbow_2X.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">살롱 드 프렌즈</a>
+                                                            <a href="" class="sub-banner"><img src="https://t1.daumcdn.net/friends/prod/category/gnb_theme_salon_2x.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">디저트 프렌즈</a>
+                                                            <a href="" class="sub-banner"><img src="https://t1.daumcdn.net/friends/prod/category/gnb_theme_dessertFriends_v1.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">플라잉 라이언</a>
+                                                            <a href="" class="sub-banner"><img src="https://t1.daumcdn.net/friends/prod/category/gnb_theme_flyingRyan_v1.png" alt=""></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">네오의 홈트레이닝</a>
+                                                            <a href="" class="sub-banner"><img src="https://t1.daumcdn.net/friends/prod/category/gnb_theme_neoHomeTraining.png" alt=""></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class=""><a href="#">인형/피규어</a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li><a href="#">미니인형</a></li>
+                                                        <li><a href="#">중형인형</a></li>
+                                                        <li><a href="#">대형인형</a></li>
+                                                        <li><a href="#">피규어/브릭</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class=""><a href="#">리빙</a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li><a href="#">쿠션/방석</a></li>
+                                                        <li><a href="#">컵/텀블러</a></li>
+                                                        <li><a href="#">주방용품</a></li>
+                                                        <li><a href="#">미용/욕실용품</a></li>
+                                                        <li><a href="#">생활소품/잡화</a></li>
+                                                        <li><a href="#">푸드</a></li>
+                                                        <li><a href="#">탈취/방향제</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class=""><a href="#">잡화</a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li><a href="#">신발</a></li>
+                                                        <li><a href="#">파우치/지갑/가방</a></li>
+                                                        <li><a href="#">패션소품</a></li>
+                                                        <li><a href="#">우산</a></li>
+                                                        <li><a href="#">모자</a></li>
+                                                        <li><a href="#">시즌잡화</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class=""><a href="#">의류</a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li><a href="#">여성의류</a></li>
+                                                        <li><a href="#">남성의류</a></li>
+                                                        <li><a href="#">상의</a></li>
+                                                        <li><a href="#">잠옷</a></li>
+                                                        <li><a href="#">속옷</a></li>
+                                                        <li><a href="#">양말</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class=""><a href="#">쥬얼리</a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li><a href="#">귀걸이</a></li>
+                                                        <li><a href="#">반지</a></li>
+                                                        <li><a href="#">가방팜/핀뱃지</a></li>
+                                                        <li><a href="#">헤어스트링</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class=""><a href="#">문구</a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li><a href="#">필기구</a></li>
+                                                        <li><a href="#">필통/케이스</a></li>
+                                                        <li><a href="#">노트/메모</a></li>
+                                                        <li><a href="#">스티커</a></li>
+                                                        <li><a href="#">데스크 소품</a></li>
+                                                        <li><a href="#">카드/엽서</a></li>
+                                                        <li><a href="#">선물 포장</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class=""><a href="#">여행/레져</a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li><a href="#">여행</a></li>
+                                                        <li><a href="#">물놀이</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class=""><a href="#">생활테크</a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li><a href="#">휴대폰 케이스</a></li>
+                                                        <li><a href="#">휴대폰 악세서리</a></li>
+                                                        <li><a href="#">노트북 악세서리</a></li>
+                                                        <li><a href="#">소형 전자</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class=""><a href="#"><span class="ico NINIZ" ></span></a>
+                                                    <ul class="sub-menu-1-1">
+                                                        <li><a href="#">케로&베로니</a></li>
+                                                        <li><a href="#">앙몬드</a></li>
+                                                        <li><a href="#">스카피</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="cell">
+                                            <span>캐릭터별</span>
+                                            <ul class="row sub-menu-2">
+                                                <li class="cell">
+                                                    <a href="#">
+                                                        <div class="img-box">
+                                                            <span class="ico characters img1" style="background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_emoticon_v4_171129.png);">
+                                                            </span>
+                                                        </div>
+                                                        <span class="title-character">라이언</span>
+                                                        <span class="text-character">위로의 아이콘,
+                                                        </br>믿음직스러운 조언자</span>
+                                                    </a>
+                                                </li>
+                                                <li class="cell">
+                                                    <a href="#">
+                                                        <div class="img-box">
+                                                            <span class="ico characters img2" style="    background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_emoticon_v4_171129.png);">
+                                                            </span>
+                                                        </div>
+                                                        <span class="title-character">어피치</span>
+                                                        
+                                                        <span class="text-character">뒤태가 매력적인
+                                                            </br>애교만점 어피치</span>
+                                                    </a>
+                                                </li>
+                                                <li class="cell">
+                                                    <a href="#">
+                                                        <div class="img-box">
+                                                            <span class="ico characters img3"style="    background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_emoticon_v4_171129.png);">
+                                                            </span>
+                                                        </div>
+                                                        <span class="title-character">프로도</span>
+                                                        <span class="text-character">부잣집 도시개
+                                                            </br>프로도</span>
+                                                    </a>
+                                                </li>
+                                                <li class="cell">
+                                                    <a href="#">
+                                                        <div class="img-box">
+                                                            <span class="ico characters img4"style="    background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_emoticon_v4_171129.png);">
+                                                            </span>
+                                                        </div>
+                                                        <span class="title-character">네오</span>
+                                                        <span class="text-character">새침한 패셔니스타
+                                                            </br>네오</span>
+                                                    </a>
+                                                </li>
+                                                <li class="cell">
+                                                    <a href="#">
+                                                        <div class="img-box">
+                                                            <span class="ico characters img5" style="background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_emoticon_v4_171129.png);">
+                                                            </span>
+                                                        </div>
+                                                        <span class="title-character">무지</span>
+                                                        <span class="text-character">토끼옷을 입은 무지</span>
+                                                    </a>
+                                                </li>
+                                                <li class="cell">
+                                                    <a href="#">
+                                                        <div class="img-box">
+                                                            <span class="ico characters img6" style="background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_emoticon_v4_171129.png);">
+                                                            </span>
+                                                        </div>
+                                                    <span class="title-character">콘</span>
+                                                        <span class="text-character">악어를 닮은
+                                                            </br>정체불명 콘</span> 
+                                                    </a>
+                                                </li>
+                                                <li class="cell">
+                                                    <a href="#">
+                                                        <div class="img-box">
+                                                            <span class="ico characters img7"  style="background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_emoticon_v4_171129.png);">
+                                                            </span>
+                                                        </div>
+                                                        <span class="title-character">튜브</span>
+                                                        <span class="text-character">화나면 미친오리로
+                                                            </br>변신하는 튜브</span>
+                                                    </a>
+                                                </li>
+                                                <li class="cell">
+                                                    <a href="#">
+                                                        <div class="img-box">
+                                                            <span class="ico characters img8" style="background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_emoticon_v4_171129.png);">
+                                                            </span>
+                                                        </div>
+                                                        <span class="title-character">제이지</span>
+                                                        <span class="text-character">힙합을 사랑하는
+                                                            </br>자유로운 영혼</span>
+                                                    </a>
+                                                </li>    
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="#">스토어<span class="bottom-bar inline-block"></span></a>
+                    </li>
+                    <li class="cell museum">
+                        <a href="#">뮤지엄<span class="bottom-bar inline-block"></span></a>
+                        <div class="con-min-width height-150">
+                            <div class="con">
+                                <nav class="sub-menu height">
+                                    <ul class="row sub-menu-2">
+                                        <li class="cell">
+                                            <a href="#">뮤지엄 소개</a>
+                                        </li>
+                                    </ul>
+                                </nav>    
+                        </div>
+                    </div> 
+                    </li>
+                    <li class="cell">
+                        <a href="#">매장안내<span class="bottom-bar inline-block"></span></a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">고객센터<span class="bottom-bar inline-block"></span></a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <nav class="top-menu-2 ">
+                <div class="btn-box row cell-right relative">
+                <a class="search-box-click" href="#">
+                    <div class="cell ico-box ">
+                        <form class="search-box absolute-middle">
+                            <input type="text" placeholder="검색어를 입력하세요">
+                        </form>
+                        <div class="ico ico-search" style="background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_gnb_181002.png);">
+                        </div>
+                    </div>
+                </a>
+                <div class="cell ico-box mypage-ico-box relative">
+                    <div class="ico ico-mypage " style="background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_gnb_181002.png);">
+                        <ul class="row mypage-menu">
+                            <li class="cell"><a href="#">로그인</a></li>
+                            <li class="cell"><a href="#">주문내역</a></li>
+                            <li class="cell"><a href="#">찜</a></li>
+                            <li class="cell"><a href="#">취소 및 교환</a></li>
+                            <li class="cell"><a href="#">포인트</a></li>
+                            <li class="cell"><a href="#">쿠폰</a></li>
+                            <li class="cell"><a href="#">1:1 문의</a></li>
+                            <li class="cell"><a href="#">비회원 주문조회</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="#">
+                    <div class="cell ico-box">
+                        <div class="ico ico-cart" style="background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_gnb_181002.png);"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cell ico-box">
+                        <div class="ico ico-global" style="background-image: url(https://t1.kakaocdn.net/friends/kfo-common/pc/img_gnb_181002.png);"></div>
+                    </div>
+                </a>
+            </div>
+            </nav>
+        </div>
+        <div class="shadow top-bottom-sh"></div>    
+    </div>
+
+    <!--바디 : 슬라이드-->        
+    <div class="slider con">
+        <div class="slide-box  relative carousel-1">
+            <div class="img-box  slide owl-carousel owl-theme">
+                <div class="item">
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/PC_MAIN_BANNER_190107.png" alt="">
+                    <div class="slide-text text-align-center slide">
+                        <span class="top-text block">에어팟 액세서리 컬렉션</span>
+                        <strong class="main-text block">매력만점 에어팟 스타일링</strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/20181227_Rbanner_pigset_PC.png" class="thumb_g rw_show" alt="">
+                    <div class="slide-text text-align-center slide">
+                        <span class="top-text block" style="color:#000">2019 신년 인형</span>
+                        <strong class="main-text block" style="color:#000">올해는 뭐든 다 돼지!</strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/PC_BANNER_181231.png" class="thumb_g rw_show" alt="">
+                    <div class="slide-text text-align-center slide">
+                        <span class="top-text block" style="color:#000">2019 여행 준비템</span>
+                        <strong class="main-text block" style="color:#000">콩닥콩닥 올해 첫 여행</strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/Rbanner_newplush_W.jpg" class="thumb_g rw_show" alt="">
+                    <div class="slide-text text-align-center slide">
+                        <span class="top-text block" style="color:#000">뉴페이스 신상인형</span>
+                        <strong class="main-text block" style="color:#000">우리 만나서 반가워요</strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/Rbanner_humid_W.jpg" class="thumb_g rw_show" alt="">
+                    <div class="slide-text text-align-center slide">
+                        <span class="top-text block" style="color:#000">라이언 가습기</span>
+                        <strong class="main-text block" style="color:#000">오늘도 내 일상은 촉촉!
+    </strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/PC_MAIN_BANNER_lamp.png" class="thumb_g rw_show" alt="">
+                    <div class="slide-text text-align-center slide">
+                        <span class="top-text block" style="color:#000">감성 무드등 컬렉션</span>
+                        <strong class="main-text block" style="color:#000">하루의 무드 ON
+    </strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/Rbanner_couple_W_181217.jpg" class="thumb_g rw_show" alt="">
+                    <div class="slide-text text-align-center slide">
+                        <span class="top-text block" style="color:#000">꽁냥꽁냥 커플템</span>
+                        <strong class="main-text block" style="color:#000">사랑이 샘솟는 커플 아이템
+    </strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/20181206_diary_Rbanner_W.png" class="thumb_g rw_show" alt="">
+                    <div class="slide-text text-align-center slide">
+                        <span class="top-text block" style="color:#000">프렌즈 다이어리와 스케줄러</span>
+                        <strong class="main-text block" style="color:#000">2019년도 잘 부탁해
+    </strong>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/PC_MAIN_BANNER_pajama_181217.png" class="thumb_g rw_show" alt="">
+                    <div class="slide-text text-align-center slide">
+                        <span class="top-text block" style="color:#000">달콤한 꿈나라 컬렉션</span>
+                        <strong class="main-text block" style="color:#000">포근한 꿈 속 세상
+    </strong>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+        
+
+    <!--카드-->
+    <div class="card-box con text-align-center">
+        <ul class="row">
+            <li class="cell">
+                <a href="#">
+                    <div class="text"></div>
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/PC_WCBANNER_2019sale.jpg" alt="">
+                </a>
+            </li>
+            <li class="cell">
+                <a href="#">
+                    <div class="text">달콤한 <br>3분 디저트
+                    </div>
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/20181218_wcard_waffle_W.png" alt="">
+                </a>
+            </li>
+            <li class="cell">
+                <a href="#">
+                    <div class="text">
+                        스마트함을 <br>더하는 인싸템
+                    </div>
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/20181204_wcard_mouse_W.png" alt="">
+                </a>
+            </li>
+            <li class="cell">
+                <a href="#">
+                    <div class="text">
+                        충전할 <br>시간이에요
+                    </div>
+                    <img src="https://t1.daumcdn.net/friends/prod/banner/Cbanner_recharge_W.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+        
+
+
+    <!--새로나온 친구들 리스트-->
+    <div class="con prod-list hot-stuff">
+        <nav class="prod-list-1">
+            <div class="prod-list-title">새로나온 친구들</div>
+            <ul class="row">
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-1<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FFRPBAPCAR8401_AW_00.jpg" alt="" class="img1"></span></div>
+                    <div class="title">차량용 급속충전기_어피치</div>
+                    <div class="price"><span>20,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-2<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FFRPBRYCAR8400_AW_00.jpg" alt="" class="img2"></span></div>
+                    <div class="title">차량용 거치대_라이언</div>
+                    <div class="price"><span>19,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-3<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2F8809641461544_AW_00.jpg" alt="" class="img3"></span></div>
+                    <div class="title">메모리폼 목베개-리틀 어피치</div>
+                    <div class="price"><span>24,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-4<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_shade_TB.jpg" alt="" class="img4"></span></div>
+                    <div class="title">페이스형안대-리틀 튜브</div>
+                    <div class="price"><span>12,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-5<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_littleRY_case.jpg" alt="" class="img5"></span></div>
+                    <div class="title">에어팟케이스_리틀라이언</div>
+                    <div class="price"><span>15,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-6<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FFRPBRYHTL0001_AW_00.jpg" alt="" class="img6"></span></div>
+                    <div class="title">핸드타올_별라이언</div>
+                    <div class="price"><span>69,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-7<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_neckRY.jpg" alt="" class="img7"></span></div>
+                    <div class="title">후드 목베개-리틀라이언</div>
+                    <div class="price"><span>24,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-8<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_01_passport_AP.jpg" alt="" class="img8"></span></div>
+                    <div class="title">투명여권지갑_리틀 어피치</div>
+                    <div class="price"><span>8,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+            </ul>
+        </nav>
+        <span class="more-prod hide" >상품 더 보기</span>
+        <ul class="row prod-list-1-2 hide">
+                <li class="cell">
+                    <div class="img-box"><span><img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FFRPBAPCAR8401_AW_00.jpg" alt="" class="img1"></span></div>
+                    <div class="title">차량용 급속충전기_어피치</div>
+                    <div class="price"><span>20,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span><img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FFRPBRYCAR8400_AW_00.jpg" alt="" class="img2"></span></div>
+                    <div class="title">차량용 거치대_라이언</div>
+                    <div class="price"><span>19,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span><img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2F8809641461544_AW_00.jpg" alt="" class="img3"></span></div>
+                    <div class="title">메모리폼 목베개-리틀 어피치</div>
+                    <div class="price"><span>24,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span><img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_shade_TB.jpg" alt="" class="img4"></span></div>
+                    <div class="title">페이스형안대-리틀 튜브</div>
+                    <div class="price"><span>12,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span><img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_littleRY_case.jpg" alt="" class="img5"></span></div>
+                    <div class="title">에어팟케이스_리틀라이언</div>
+                    <div class="price"><span>15,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span><img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FFRPBRYHTL0001_AW_00.jpg" alt="" class="img6"></span></div>
+                    <div class="title">핸드타올_별라이언</div>
+                    <div class="price"><span>69,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span><img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_neckRY.jpg" alt="" class="img7"></span></div>
+                    <div class="title">후드 목베개-리틀라이언</div>
+                    <div class="price"><span>24,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span><img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_01_passport_AP.jpg" alt="" class="img8"></span></div>
+                    <div class="title">투명여권지갑_리틀 어피치</div>
+                    <div class="price"><span>8,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+        </ul>
+    </div>        
+            
+    <!--라이언 리스트-->
+    <div class="con prod-list hot-stuff">
+        <nav class="prod-list-1">
+            <a href="" class="prod-list-bn relative">
+                <div class="top-text">라이언을<br>구경하라이언</div>
+                <div class="bottom-text">요기조기 라이언들이 한 곳에</br>라이언으로 덕심단결!</!br></div>
+                <div class="img-box"><img src="https://t1.daumcdn.net/friends/prod/banner/themeRYAN_PC.png" alt=""></div>
+            </a>
+            <ul class="row">
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-1<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_WM.jpg" alt="" class="img1"></span></div>
+                    <div class="title">무선마우스_라이언</div>
+                    <div class="price"><span>23,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-2<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_wafflemaker.jpg" alt="" class="img2"></span></div>
+                    <div class="title">프렌즈 와플&브레드 메이커(라이언와플+프렌즈4구)</div>
+                    <div class="price"><span>69,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-3<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_passport_RY.jpg" alt="" class="img3"></span></div>
+                    <div class="title">투명여권지갑_리틀 라이언</div>
+                    <div class="price"><span>8,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-4<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_penribbonRY.jpg" alt="" class="img4"></span></div>
+                    <div class="title">이모티콘 젤펜_리본라이언</div>
+                    <div class="price"><span>3,500원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-5<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_batteryRY.jpg" alt="" class="img5"></span></div>
+                    <div class="title">볼륨 보조배터리5000-라이언</div>
+                    <div class="price"><span>35,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-6<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_padRY.jpg" alt="" class="img6"></span></div>
+                    <div class="title">리틀프렌즈마우스패드-라이언</div>
+                    <div class="price"><span>5,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-6<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_bodyRY.jpg" alt="" class="img7"></span></div>
+                    <div class="title">코지바디필로우_라이언</div>
+                    <div class="price"><span>39,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-8<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_pouch_RY.jpg" alt="" class="img8"></span></div>
+                    <div class="title">클리어파우치 4P Set-리틀 라이언</div>
+                    <div class="price"><span>7,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+            </ul>
+        </nav>
+        <a href="#">상품 더 보기</a>
+    </div>        
+            
+    <!--어피치 리스트-->
+    <div class="con prod-list hot-stuff">
+        <nav class="prod-list-1">
+            <a href="" class="prod-list-bn relative">
+                <div class="top-text">어피치가 불러요<br>핏치핏치 픽미업</div>
+                <div class="bottom-text">잔망둥이 어피치가 한 곳에!</br>어피치를 '픽'해보아요</!br></div>
+                <div class="img-box"><img src="https://t1.daumcdn.net/friends/prod/theme/themeAPEACH_PC.png" alt=""></div>
+            </a>
+            <ul class="row">
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-1<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_WM.jpg" alt="" class="img1"></span></div>
+                    <div class="title">2019 다이어리_어피치</div>
+                    <div class="price"><span>16,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-2<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_hugAP.jpg" alt="" class="img2"></span></div>
+                    <div class="title">허그미인형_어피치</div>
+                    <div class="price"><span>90,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-3<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_mdA.jpg" alt="" class="img3"></span></div>
+                    <div class="title">무선충전마우스패드_어피치</div>
+                    <div class="price"><span>29,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-4<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_penAP.jpg" alt="" class="img4"></span></div>
+                    <div class="title">이모티콘 젤펜_리틀어피치</div>
+                    <div class="price"><span>3,500원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-5<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_01_moodAP.jpg" alt="" class="img5"></span></div>
+                    <div class="title">볼륨 보조배터리5000-라이언</div>
+                    <div class="price"><span>35,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-6<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_padRY.jpg" alt="" class="img6"></span></div>
+                    <div class="title">실리콘무드등_리틀어피치</div>
+                    <div class="price"><span>39,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+            </ul>
+        </nav>
+        <a href="#">상품 더 보기</a>
+    </div>     
+
+
+    <!--인기 친구들 리스트-->   
+    <div class="con prod-list best-item">
+        <nav class="prod-list-1">
+            <div class="prod-list-title">인기 친구들</div>
+            <ul class="row">
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-1<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_hmidifierryan.jpg" alt="" class="img1"></span></div>
+                    <div class="title">라이언 가습기</div>
+                    <div class="price"><span>20,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-2<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_TC.jpg" alt="" class="img2"></span></div>
+                    <div class="title">2019 탁상 캘린더</div>
+                    <div class="price"><span>6,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-3<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_litteAP_heart.jpg" alt="" class="img3"></span></div>
+                    <div class="title">에어팟케이스_하트어피치</div>
+                    <div class="price"><span>15,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-4<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_TS1.jpg" alt="" class="img4"></span></div>
+                    <div class="title">2019 탁상 스케줄러</div>
+                    <div class="price"><span>8,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-5<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_batterylittleAP_1.jpg" alt="" class="img5"></span></div>
+                    <div class="title">6000mAh입체형 보조배터리_어피치</div>
+                    <div class="price"><span>42,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-6<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FFRPBRYHTL0001_AW_00.jpg" alt="" class="img6"></span></div>
+                    <div class="title">핸드타올_별라이언</div>
+                    <div class="price"><span>49,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-7<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_mA.jpg" alt="" class="img7"></span></div>
+                    <div class="title">무선마우스_어피치</div>
+                    <div class="price"><span>23,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+                <li class="cell">
+                    <div class="img-box"><span>prod-img-8<img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_MD.jpg" alt="" class="img8"></span></div>
+                    <div class="title">무선충전마우스패드_라이언</div>
+                    <div class="price"><span>29,000원</span></div>
+                    <div class="state"><img src="" alt="" class="cart"></div>
+                </li>
+            </ul>
+        </nav>
+        <a href="#">상품 더 보기</a>
+    </div>    
+
+
+
+    <!--풋터-->
+    <div class="notice con">
+        <a href="#">
+            <span class="ico ico-news"></span>
+            <span class="news-text">공지</span>
+            <span class="news-text">카카오프렌즈 이용약관 개정 안내 (전면개정, 18.12.17)</span>
+        </a>
+    </div>
+
+    <!--모바일 풋터 메뉴 낄끼-->
+    <div class="mobile-footer mobile">
+        <h3>혹시, 아직 못정했나요?</h3>
+        <nav class="footer-menu">
+            <ul class="row">
+                <li class="cell"><a href="#">테마 기획전</a></li>
+                <li class="cell"><a href="#">인형/피규어</a></li>
+                <li class="cell"><a href="#">리빙</a></li>
+                <li class="cell"><a href="#">잡화</a></li>
+                <li class="cell"><a href="#">의류</a></li>
+                <li class="cell"><a href="#">쥬얼리</a></li>
+                <li class="cell"><a href="#">문구</a></li>
+                <li class="cell"><a href="#">여행/레져</a></li>
+                <li class="cell"><a href="#">생활테크</a></li>
+                <li class="cell"><a href="#"><span class="NINIZ"></span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mobile-notice mobile">
+        <a href="#" class="notice row">
+            <span class="head-text">공지 </span>
+            <span class="news-text"> 카카오프렌즈 이용약관 개정 안내 (전면개정, 18.12.17)</span>
+            <i class="cell-right"></i>
+        </a>
+        <div class="kakaotalk">
+            <span class="text-1">누구보다 빠르게<br>카카오프렌즈의 신상 소식과<br>특별한 혜택을 만나보세요!</span>
+            <p class="text-2">카카오프렌즈 플러스친구의 정보와 이벤트<br>대한 알림을 카카오톡으로 받을 수 있습니다.</p>
+            <div class="kakao-btn">친구 추가하기</div>
+            <span class="friends-ico"></span>
+        </div>
+    </div>
+
+    <!--웹-->
+    <div class="foot">
+        <div class="inner-footer con">
+            <div class="info row">
+                <a href="#" class="cell">개인정보처리방침</a>
+                <a href="#" class="cell">이용약관</a>
+                <a href="#" class="cell">제휴문의</a>
+            </div>
+            <span class="text-copy">카카오아이엑스 사업자등록번호 : 354-86-00070</span>
+            <span class="text-copy">통신판매업 신고번호 : 2017-서울강남-02573</span>
+            <span class="text-copy">대표이사 : 권승조</span>
+            <span class="text-copy">주소 : 서울특별시 강남구 테헤란로 521 파르나스타워, 27층</span>
+            <span class="text-copy">고객센터 : 1577-6263 / 평일 10시 ~ 18시</span>
+            <span class="text-copy ">
+                <a class="mail" href="#">store@kakaofriends.com</a>
+            </span>
+            <span class="text-copy ">
+                글로벌 배송 문의 : 
+                <a class="mail" href="#">global@kakaofriends.com</a>
+            </span>
+            <span class="text-copy corp">
+                Copyright © 
+                <a class="link-copy" href="#">KAKAO IX CORP.</a>
+            </span>
+        </div>
+        <div class="empty"></div>
+    </div>
+
+    <div class="scrollbar" id="style-1">
+        <div class="force-overflow"></div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
